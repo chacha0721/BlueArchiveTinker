@@ -14,7 +14,6 @@ public class BluearchiveModifier {
     public static final ModifierDeferredRegister MODIFIERS = ModifierDeferredRegister.create(Bluearchive_tinker.MODID);
     //材料词条
     public static final StaticModifier<MikaStars> MikiaStars = MODIFIERS.register("mikastars", MikaStars::new);
-    //工具词条
     public static final StaticModifier<Play> Play = MODIFIERS.register("play", Play::new);
     public static final StaticModifier<Cake> MikaCake = MODIFIERS.register("mikacake", Cake::new);
     public static final StaticModifier<PlayTwo> PlayTwo = MODIFIERS.register("playtwo", PlayTwo::new);
@@ -33,8 +32,6 @@ public class BluearchiveModifier {
     public static final StaticModifier<PlayTwo> Eventually = MODIFIERS.register("eventually", PlayTwo::new);
     public static final StaticModifier<PlayTwo> Transmigration = MODIFIERS.register("transmigration", PlayTwo::new);
     public static final StaticModifier<PlayTwo> Trauma = MODIFIERS.register("trauma", PlayTwo::new);
-    private static final ModifierDeferredRegister ThermalModifiers = ModifierDeferredRegister.create(Bluearchive_tinker.MODID);
-
     public static void register(IEventBus bus) {
         MODIFIERS.register(bus);
     }

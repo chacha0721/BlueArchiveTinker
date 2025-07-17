@@ -1,4 +1,4 @@
-package com.chacha.bluearchive_tinker.Other;
+package com.chacha.bluearchive_tinker.Content.Data;
 
 import com.google.gson.JsonObject;
 import net.minecraft.core.registries.BuiltInRegistries;

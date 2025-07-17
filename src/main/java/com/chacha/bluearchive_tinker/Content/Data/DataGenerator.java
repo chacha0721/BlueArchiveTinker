@@ -1,7 +1,6 @@
 package com.chacha.bluearchive_tinker.Content.Data;
 
 import com.chacha.bluearchive_tinker.Bluearchive_tinker;
-import com.chacha.bluearchive_tinker.Other.BlueArchiveTinkerBucketModelProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.EventPriority;

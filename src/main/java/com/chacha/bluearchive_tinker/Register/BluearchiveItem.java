@@ -2,7 +2,7 @@ package com.chacha.bluearchive_tinker.Register;
 
 
 import com.chacha.bluearchive_tinker.Bluearchive_tinker;
-import com.chacha.bluearchive_tinker.Other.ColorFulItem;
+import com.chacha.bluearchive_tinker.Content.Item.ColorFulItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -71,8 +71,8 @@ public class BluearchiveItem {
     public static final Supplier<Item> sponge_cake = registerCommonMaterials(ITEM, "sponge_cake", () -> new ColorFulItem(new Item.Properties().food
             (new FoodProperties.Builder().
                     nutrition(20).saturationMod(1.5f)
-                    .effect(new MobEffectInstance(MobEffects.LUCK, 12000, 0), 1.0F)
-                    .effect(new MobEffectInstance(MobEffects.LUCK, 12000, 4), 0.1f)
+                    .effect(()->new MobEffectInstance(MobEffects.LUCK, 12000, 0), 1.0F)
+                    .effect(()->new MobEffectInstance(MobEffects.LUCK, 12000, 4), 0.1f)
                     .build()), 0xE4A60C, new Component[]
             {
                     Component.literal("给你嘴里塞一整根瑞士卷").withStyle(style -> style.withColor(0xFFF159)),
@@ -81,11 +81,11 @@ public class BluearchiveItem {
             }));
     public static final Supplier<Item> parfait = registerCommonMaterials(ITEM, "parfait", () -> new ColorFulItem(new Item.Properties().food
             (new FoodProperties.Builder().nutrition(5).saturationMod(2f).
-                    effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 2), 1.0F).
-                    effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 10000, 4), 1).
-                    effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 4), 1).
-                    effect(new MobEffectInstance(MobEffects.HEAL, 60, 2), 1).
-                    effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 2), 1)
+                    effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 600, 2), 1.0F).
+                    effect(()->new MobEffectInstance(MobEffects.NIGHT_VISION, 10000, 4), 1).
+                    effect(()->new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 4), 1).
+                    effect(()->new MobEffectInstance(MobEffects.HEAL, 60, 2), 1).
+                    effect(()->new MobEffectInstance(MobEffects.ABSORPTION, 600, 2), 1)
                     .build()), 0xE4A60C, new Component[]
             {
                     Component.literal("在三一的著名甜品店，咖啡厅千层出售的芭菲").withStyle(style -> style.withColor(0xFFF159)),
@@ -95,7 +95,7 @@ public class BluearchiveItem {
     public static final Supplier<Item> MikeCake = registerCommonMaterials(ITEM, "mikacake", () -> new ColorFulItem(new Item.Properties().food
             (new FoodProperties.Builder().nutrition(20).saturationMod(3f).
 
-                    effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 2), 1)
+                    effect(()->new MobEffectInstance(MobEffects.ABSORPTION, 600, 2), 1)
 
                     .build()), 0xFEEAF3, new Component[]
             {

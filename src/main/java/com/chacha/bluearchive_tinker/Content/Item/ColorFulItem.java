@@ -1,4 +1,4 @@
-package com.chacha.bluearchive_tinker.Other;
+package com.chacha.bluearchive_tinker.Content.Item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
