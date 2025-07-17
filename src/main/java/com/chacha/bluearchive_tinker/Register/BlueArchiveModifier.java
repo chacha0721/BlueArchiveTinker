@@ -1,7 +1,7 @@
 package com.chacha.bluearchive_tinker.Register;
 
 
-import com.chacha.bluearchive_tinker.Bluearchive_tinker;
+import com.chacha.bluearchive_tinker.BlueArchiveTinker;
 import com.chacha.bluearchive_tinker.Content.Modifier.Cake;
 import com.chacha.bluearchive_tinker.Content.Modifier.MikaStars;
 import com.chacha.bluearchive_tinker.Content.Modifier.Play;
@@ -10,8 +10,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
 import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
 
-public class BluearchiveModifier {
-    public static final ModifierDeferredRegister MODIFIERS = ModifierDeferredRegister.create(Bluearchive_tinker.MODID);
+public class BlueArchiveModifier {
+    private static final ModifierDeferredRegister MODIFIERS = ModifierDeferredRegister.create(BlueArchiveTinker.MODID);
     //材料词条
     public static final StaticModifier<MikaStars> MikiaStars = MODIFIERS.register("mikastars", MikaStars::new);
     public static final StaticModifier<Play> Play = MODIFIERS.register("play", Play::new);

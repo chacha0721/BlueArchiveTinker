@@ -7,21 +7,21 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Bluearchive_tinker.MODID)
-public class Bluearchive_tinker {
+@Mod(BlueArchiveTinker.MODID)
+public class BlueArchiveTinker {
     public static final String MODID = "bluearchive_tinker";
 
-    public Bluearchive_tinker() {
+    public BlueArchiveTinker() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        BluearchiveItem.register(modEventBus);
-        BluearchiveTab.register(modEventBus);
-        BluearchiveFluid.register(modEventBus);
-        BluearchiveModifier.register(modEventBus);
+        BlueArchiveItem.register(modEventBus);
+        BlueArchiveTab.register(modEventBus);
+        BlueArchiveFluid.register(modEventBus);
+        BlueArchiveModifier.register(modEventBus);
         BlueArchiveSounds.register(modEventBus);
     }
 
     public static String makeDescriptionId(String type, String name) {
-        return type + "." + Bluearchive_tinker.MODID + "." + name;
+        return type + "." + BlueArchiveTinker.MODID + "." + name;
     }
 
     public static ResourceLocation getResource(String path) {

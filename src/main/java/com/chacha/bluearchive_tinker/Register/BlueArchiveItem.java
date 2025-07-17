@@ -1,8 +1,9 @@
 package com.chacha.bluearchive_tinker.Register;
 
 
-import com.chacha.bluearchive_tinker.Bluearchive_tinker;
+import com.chacha.bluearchive_tinker.BlueArchiveTinker;
 import com.chacha.bluearchive_tinker.Content.Item.ColorFulItem;
+import lombok.Getter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -18,16 +19,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class BluearchiveItem {
+public class BlueArchiveItem {
 
-    //invert_hoshino
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Bluearchive_tinker.MODID);
     // 这个物品的tab可以使用游戏中的tab，也可以自己创建，并注册。
-//    public static final RegistryObject<Item> mika_spindle = ITEMS.register
-//            ("mika_spindle",() ->new ColorFulItem(new Item.Properties().tab(BluearchiveTab.BLUEARCHIVETAB),0xFEEAF3));
-    private static final DeferredRegister<Item> ITEM = DeferredRegister.create(Registries.ITEM, Bluearchive_tinker.MODID);
+    private static final DeferredRegister<Item> ITEM = DeferredRegister.create(Registries.ITEM, BlueArchiveTinker.MODID);
     public static final Supplier<Item> bluearchives = ITEM.register("bluearchives", () -> new Item(new Item.Properties()));
-    public static List<RegistryObject<Item>> commonItem = new ArrayList<>(List.of());
+    @Getter
+    private final static List<RegistryObject<Item>> commonItem = new ArrayList<>(List.of());
     public static final Supplier<Item> Hoshino = registerCommonMaterials(ITEM, "hoshino", () -> new ColorFulItem(new Item.Properties(), 0xFFE5F9, new Component[]
             {
                     Component.literal("呼哇，随便搞搞就行了吧").withStyle(style -> style.withColor(0xFFAAFF)),

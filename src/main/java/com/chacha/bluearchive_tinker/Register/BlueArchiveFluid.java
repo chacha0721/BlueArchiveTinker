@@ -13,10 +13,10 @@ import slimeknights.mantle.registration.object.FluidObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.chacha.bluearchive_tinker.Bluearchive_tinker.MODID;
+import static com.chacha.bluearchive_tinker.BlueArchiveTinker.MODID;
 import static slimeknights.tconstruct.fluids.block.BurningLiquidBlock.createBurning;
 
-public class BluearchiveFluid {
+public class BlueArchiveFluid {
 
     public static final FluidDeferredRegister FLUIDS = new FluidDeferredRegister(MODID);
     protected static Map<FluidObject<ForgeFlowingFluid>, Boolean> FLUID_MAP = new HashMap<>();

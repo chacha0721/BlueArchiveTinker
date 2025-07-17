@@ -1,17 +1,19 @@
 package com.chacha.bluearchive_tinker.Register;
 
-import com.chacha.bluearchive_tinker.Bluearchive_tinker;
+import com.chacha.bluearchive_tinker.BlueArchiveTinker;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class BluearchiveTab {
-    public static final DeferredRegister<CreativeModeTab> creative_mode_tab = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Bluearchive_tinker.MODID);
+public class BlueArchiveTab {
+    public static final DeferredRegister<CreativeModeTab> creative_mode_tab = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BlueArchiveTinker.MODID);
     public final static String BlueArchiveTab = "tab.bluearchivetab.ingot";
     public final static String FavoriteTab = "tab.favoritetab.ingot";
 
@@ -21,17 +23,13 @@ public class BluearchiveTab {
             //物品栏名称
             .title(Component.translatable(BlueArchiveTab))
             //图标
-            .icon(BluearchiveItem.bluearchives.get()::getDefaultInstance)
+            .icon(BlueArchiveItem.bluearchives.get()::getDefaultInstance)
             .displayItems((itemDisplayParameters, output) -> {
-
-                output.accept(BluearchiveItem.mika_ingot.get());
-                output.accept(BluearchiveItem.HoshinoSwimsuit.get());
-                output.accept(BluearchiveItem.Hoshino.get());
-                output.accept(BluearchiveItem.InvertHoshino.get());
-                output.accept(BluearchiveItem.KaiserBlue.get());
-                output.accept(BluearchiveItem.violane.get());
-
-
+                for (RegistryObject<Item> itemsDeferredRegister : BlueArchiveItem.getCommonItem()) {
+                    if (itemsDeferredRegister.isPresent()) {
+                        output.accept(itemsDeferredRegister.get());
+                    }
+                }
             })
             .build()
     );
@@ -43,14 +41,14 @@ public class BluearchiveTab {
             //物品栏名称
             .title(Component.translatable(FavoriteTab))
             //图标
-            .icon(BluearchiveItem.hand_cream.get()::getDefaultInstance)
+            .icon(BlueArchiveItem.hand_cream.get()::getDefaultInstance)
             .displayItems((itemDisplayParameters, output) -> {
 
-                output.accept(BluearchiveItem.parfait.get());
-                output.accept(BluearchiveItem.hand_cream.get());
-                output.accept(BluearchiveItem.the_beyond.get());
-                output.accept(BluearchiveItem.sponge_cake.get());
-                output.accept(BluearchiveItem.MikeCake.get());
+                output.accept(BlueArchiveItem.parfait.get());
+                output.accept(BlueArchiveItem.hand_cream.get());
+                output.accept(BlueArchiveItem.the_beyond.get());
+                output.accept(BlueArchiveItem.sponge_cake.get());
+                output.accept(BlueArchiveItem.MikeCake.get());
 
             })
 
