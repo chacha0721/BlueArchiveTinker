@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/generated","textures": {"layer0": "bluearchive_tinker:item/kaiser_blue"}
+}
+

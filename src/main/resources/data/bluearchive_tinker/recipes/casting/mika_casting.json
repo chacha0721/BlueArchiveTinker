@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "minecraft:diamond_block"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "name": "tconstruct:molten_emerald",
+    "amount": 90
+  },
+  "result": "bluearchive_tinker:mika_ingot",
+  "cooling_time": 100
+}

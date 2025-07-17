@@ -1,0 +1,32 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:neverend"
+    },
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:tacticsattack"
+    },
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:reliable"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:absolutejustice"
+      },
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:sandstrom"
+      },
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:tacticsprotect"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:diamond"
+    },
+    "B":
+    {
+      "item": "minecraft:lapis_lazuli"
+    }
+
+  },
+  "result":
+  {
+    "item": "bluearchive_tinker:violane",
+    "count": 1
+  }
+
+
+}

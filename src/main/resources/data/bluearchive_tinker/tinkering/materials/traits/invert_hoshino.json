@@ -1,0 +1,32 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:eventually"
+    },
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:transmigration"
+    },
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:trauma"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:eventually"
+      },
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:transmigration"
+      },
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:trauma"
+      }
+    ]
+  }
+}

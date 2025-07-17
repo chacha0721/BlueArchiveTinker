@@ -1,0 +1,34 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DDD"
+  ],
+  "key":
+  {
+    "A":
+    {
+      "item": "bluearchive_tinker:hand_cream"
+    },
+    "B":
+    {
+      "item": "bluearchive_tinker:sponge_cake"
+    },
+    "C":
+    {
+      "item": "bluearchive_tinker:parfait"
+    },
+    "D":
+    {
+      "item": "bluearchive_tinker:the_beyond"
+    }
+  },
+  "result":
+  {
+    "item": "bluearchive_tinker:mika_ingot",
+    "count": 1
+  }
+
+
+}

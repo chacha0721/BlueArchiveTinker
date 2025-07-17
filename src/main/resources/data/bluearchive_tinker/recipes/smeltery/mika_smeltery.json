@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "name": "tconstruct:molten_zinc",
+      "amount": 90
+    },
+
+    {
+      "name": "tconstruct:molten_emerald",
+      "amount": 90
+    }
+  ],
+  "result": {
+    "fluid": "bluearchive_tinker:mikafluid",
+    "amount": 90
+  },
+  "temperature": 1300
+}

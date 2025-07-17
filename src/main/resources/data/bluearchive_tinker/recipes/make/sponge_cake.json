@@ -1,0 +1,34 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "DBD"
+  ],
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    "B":
+    {
+      "item": "minecraft:egg"
+    },
+    "C":
+    {
+      "item": "bluearchive_tinker:violane"
+    },
+    "D":
+    {
+      "item": "minecraft:bread"
+    }
+  },
+  "result":
+  {
+    "item": "bluearchive_tinker:sponge_cake",
+    "count": 1
+  }
+
+
+}

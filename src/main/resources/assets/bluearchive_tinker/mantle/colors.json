@@ -1,0 +1,13 @@
+{
+  "material.bluearchive_tinker": {
+    "mika_ingot": "#FEEAF3",
+    "kaiser_blue": "#696a6b",
+    "hoshino": "#FFE5F9",
+    "invert_hoshino": "#D93570"
+  },
+  "modifier.bluearchive_tinker": {
+    "mikastart": "#FEEAF3",
+    "mikacake": "#FEEAF3"
+  }
+}
+

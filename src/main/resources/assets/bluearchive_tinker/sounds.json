@@ -1,0 +1,12 @@
+{
+  "mika_ahhh": {
+    "category": "voice",
+    "subtitle": "subtitles.bluearchive_tinker.mika_ahhh",
+    "sounds": [
+      {
+        "name": "bluearchive_tinker:mika_ahhh",
+              "stream": "true"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:kaiserblueattack"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:kaiserbluesup"
+
+      },
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:kaiserbluetank"
+      }
+    ]
+  }
+}

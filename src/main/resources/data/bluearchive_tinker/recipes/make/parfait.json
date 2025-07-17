@@ -1,0 +1,54 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHJ"
+  ],
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:potion"
+    },
+    "B":
+    {
+      "item": "minecraft:potion"
+    },
+    "C":
+    {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "D":
+    {
+      "item": "minecraft:golden_carrot"
+    },
+    "E":
+    {
+      "item": "minecraft:nether_star"
+    },
+    "F":
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    "J":
+    {
+      "item": "minecraft:golden_apple"
+    },
+    "G":
+    {
+      "item": "minecraft:blue_ice"
+    },
+    "H":
+    {
+      "item": "minecraft:packed_ice"
+    }
+  },
+  "result":
+  {
+    "item": "bluearchive_tinker:parfait",
+    "count": 1
+  }
+
+
+}
