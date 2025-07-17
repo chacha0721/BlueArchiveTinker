@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "bluearchive_tinker.refmap.json",
   "mixins": [
+    "TestMixin"
   ],
   "client": [
   ],

@@ -101,6 +101,7 @@ public class BlueArchiveItem {
                     Component.literal("相信我~吃过后你一定会爱上它的！").withStyle(style -> style.withColor(0xFEEAF3))
 
             }));
+    //以后不要再去tab类里面手动添加这些普通物品了,已经可以自动添加了
 
     public static RegistryObject<Item> registerCommonMaterials(DeferredRegister<Item> register, String name, Supplier<? extends Item> sup) {
         RegistryObject<Item> object = register.register(name, sup);
