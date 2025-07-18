@@ -32,6 +32,7 @@ public class BlueArchiveModifier {
     public static final StaticModifier<PlayTwo> Eventually = MODIFIERS.register("eventually", PlayTwo::new);
     public static final StaticModifier<PlayTwo> Transmigration = MODIFIERS.register("transmigration", PlayTwo::new);
     public static final StaticModifier<PlayTwo> Trauma = MODIFIERS.register("trauma", PlayTwo::new);
+
     public static void register(IEventBus bus) {
         MODIFIERS.register(bus);
     }

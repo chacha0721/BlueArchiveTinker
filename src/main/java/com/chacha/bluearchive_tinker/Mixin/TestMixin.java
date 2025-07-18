@@ -17,9 +17,9 @@ public abstract class TestMixin extends LivingEntity {
         super(pEntityType, pLevel);
     }
 
-    @Inject(method = "getAttackStrengthScale",at = @At("HEAD"), cancellable = true)
-    private void setAttackStrength(float pAdjustTicks, CallbackInfoReturnable<Float> cir){
-        if(ModifierUtil.getModifierLevel(this.getMainHandItem(), BlueArchiveModifier.MikiaStars.getId())>0){
+    @Inject(method = "getAttackStrengthScale", at = @At("HEAD"), cancellable = true)
+    private void setAttackStrength(float pAdjustTicks, CallbackInfoReturnable<Float> cir) {
+        if (ModifierUtil.getModifierLevel(this.getMainHandItem(), BlueArchiveModifier.MikiaStars.getId()) > 0) {
             cir.setReturnValue(1f);
         }
     }

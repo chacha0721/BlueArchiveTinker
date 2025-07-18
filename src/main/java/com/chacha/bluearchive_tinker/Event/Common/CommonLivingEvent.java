@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = BlueArchiveTinker.MODID)
 public class CommonLivingEvent {
     @SubscribeEvent
-    public static void onDeath(LivingDeathEvent event){
+    public static void onDeath(LivingDeathEvent event) {
 
     }
 }

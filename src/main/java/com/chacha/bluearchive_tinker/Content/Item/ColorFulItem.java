@@ -19,18 +19,13 @@ public class ColorFulItem extends Item {
         this.tooltip = tooltip;
     }
 
-
     @Override
     public Component getName(ItemStack pStack) {
         return Component.translatable(this.getDescriptionId(pStack)).withStyle(style -> style.withColor(color));
     }
-
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable net.minecraft.world.level.Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         Collections.addAll(pTooltipComponents, tooltip);
     }
 }
-
-
-// 颜色
