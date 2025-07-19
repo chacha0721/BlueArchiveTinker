@@ -44,6 +44,16 @@ public class BlueArchiveItem {
             Component.literal("唔哇~...啊，老师~").withStyle(style -> style.withColor(0xFFAAFF)),
             Component.literal("难得来一次，休闲地度过吧~").withStyle(style -> style.withColor(0xFFAAFF))
     }), Materials);
+    public static final Supplier<Item> Yuzu = registerToList(ITEM, "yuzu", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
+            Component.literal("游戏开发部，部长……柚子").withStyle(style -> style.withColor(0xFFAAFF)),
+            Component.literal("真…真的要……把我带上吗？").withStyle(style -> style.withColor(0xFFAAFF))
+    }), Materials);
+    public static final Supplier<Item> AzusaSwimsuit = registerToList(ITEM, "azusa_swimsuit", () -> new ColorFulItem(commonItem, 0xf4e8e0, new Component[]{
+            Component.literal("白洲梓，到达目标地点大海").withStyle(style -> style.withColor(0xfcf8f6)),
+            Component.literal("马上开始进行预定的任务").withStyle(style -> style.withColor(0xfcf8f6)),
+            Component.literal("……并没有感觉兴奋什么的，才没有这样的事").withStyle(style -> style.withColor(0xfcf8f6))
+    }), Materials);
+
     public static final Supplier<Item> KaiserBlue = registerToList(ITEM, "kaiser_blue", () -> new ColorFulItem(commonItem, 0x94b8c6, new Component[]{
             Component.literal("凯撒科技之一的材料").withStyle(style -> style.withColor(0x696a6b)),
     }), Materials);
@@ -78,7 +88,7 @@ public class BlueArchiveItem {
             Component.literal("在三一的著名甜品店，咖啡厅千层出售的芭菲").withStyle(style -> style.withColor(0xFFF159)),
             Component.literal("在柔软的冰激凌上层层堆叠的点心、糖浆、鲜奶油、水果和谐地融为了一体 果然正宗！").withStyle(style -> style.withColor(0xFFF159))
     }), Favorite);
-    public static final Supplier<Item> MikeCake = registerToList(ITEM, "mikacake", () -> new ColorFulItem(commonItem.food(new FoodProperties.Builder()
+    public static final Supplier<Item> MikeCake = registerToList(ITEM, "mika_cake", () -> new ColorFulItem(commonItem.food(new FoodProperties.Builder()
             .nutrition(20)
             .saturationMod(3f)
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 600, 2), 1)
@@ -86,6 +96,8 @@ public class BlueArchiveItem {
             Component.literal("出自圣三一茶话会每日必备甜点~").withStyle(style -> style.withColor(0xFEEAF3)),
             Component.literal("相信我~吃过后你一定会爱上它的！").withStyle(style -> style.withColor(0xFEEAF3))
     }), Favorite);
+    public static final Supplier<Item> BlueArchive = registerToList(ITEM, "bluearchive", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
+    }), Materials);
     //以后不要再去tab类里面手动添加这些普通物品了,已经可以自动添加了
 
     /**

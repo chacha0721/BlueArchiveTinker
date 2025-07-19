@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "bluearchive_tinker:mika_spindle",
+  "temperature": 1000,
+  "result": {
+    "fluid": "bluearchive_tinker:mikafluid",
+    "amount": 90
+  }
+}

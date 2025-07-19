@@ -1,0 +1,104 @@
+{
+  "tab.bluearchivetab.ingot" : "蔚蓝档案",
+  "tab.favoritetab.ingot" : "爱用品礼物",
+  "tab.food.ingot" : "甜点食物",
+
+  "item.bluearchive_tinker.hand_cream":"BB护手霜",
+  "item.bluearchive_tinker.the_beyond":"Samuela「The・Beyond」",
+  "item.bluearchive_tinker.sponge_cake": "瑞士卷",
+  "item.bluearchive_tinker.parfait": "法式正统派巴菲",
+  "item.bluearchive_tinker.mika_cake": "瑞士卷蛋糕",
+
+  "item.bluearchive_tinker.mika_ingot":"未花酱",
+  "item.bluearchive_tinker.hoshino_swimsuit":"星野●泳装",
+  "item.bluearchive_tinker.violane": "青辉石",
+  "item.bluearchive_tinker.kaiser_blue": "凯撒锭●蓝",
+  "item.bluearchive_tinker.invert_hoshino": "星野●恐怖",
+  "item.bluearchive_tinker.hoshino": "星野锭",
+  "item.bluearchive_tinker.yuzu": "柚子",
+  "item.bluearchive_tinker.azusa_swimsuit": "梓●泳装",
+
+
+  "block.bluearchive_tinker.mikafluid_fluid": "未花酱汁",
+  "item.bluearchive_tinker.mikafluid_bucket": "甜甜的未花",
+  "fluid.bluearchive_tinker.mikafluid": "未花汁",
+
+
+  "material.bluearchive_tinker.mika_ingot": "圣园未花",
+
+  "modifier.bluearchive_tinker.mikastars": "Benedictio",
+  "modifier.bluearchive_tinker.mikastars.description": "命中生物时会对生物施加虚弱、缓慢、挖掘疲劳、持续伤害、发光 造成的伤害必定暴击！！！ 自身护甲高于目标时造成额外2倍伤害 ",
+  "modifier.bluearchive_tinker.mikastars.flavor": "未花才不是魔女~是老师的公主殿下~",
+
+  "modifier.bluearchive_tinker.mikacake": "茶话会",
+  "modifier.bluearchive_tinker.mikacake.description": "词条等级*1 *25% 增加生命值(最终生命值)、获取飞行能力、滑翔能力、词条等级*1 0.05概率闪避攻击",
+  "modifier.bluearchive_tinker.mikacake.flavor": "老师，由我来守护！",
+
+  "subtitles.bluearchive_tinker.mika_ahhh": "啊哈哈，牡蛎牡蛎~",
+
+  "material.bluearchive_tinker.kaiser_blue": "凯撒锭●蓝",
+
+  "modifier.bluearchive_tinker.kaiserbluetank": "大号机甲",
+  "modifier.bluearchive_tinker.kaiserbluetank.description": "移动速度减少10%(根据词条效果增加最大不超过40%) 消耗饱食度更快 空中落地速度更快",
+  "modifier.bluearchive_tinker.kaiserbluetank.flavor": "顶死你！！！",
+
+  "modifier.bluearchive_tinker.kaiserblueattack": "让你看看我的大棒子",
+  "modifier.bluearchive_tinker.kaiserblueattack.description": "攻击速度减少减少一半 伤害提升30% 对周围造成3*3的范围造成伤害（衰减50%）",
+  "modifier.bluearchive_tinker.kaiserblueattack.flavor": "凯撒出品必是精品",
+
+  "modifier.bluearchive_tinker.kaiserbluesup": "特殊金属",
+  "modifier.bluearchive_tinker.kaiserbluesup.description": "自身护甲值总额*2 韧性总额*1.5",
+  "modifier.bluearchive_tinker.kaiserbluesup.flavor": "又大又粗，厉害吧",
+
+  "material.bluearchive_tinker.hoshino": "星野锭",
+
+  "modifier.bluearchive_tinker.absolutejustice": "绝对正义",
+  "modifier.bluearchive_tinker.absolutejustice.description": "你对无来源伤害几近于免疫(无来源伤害：自然伤害,虚空伤害等...)\n[当副手物品属于工匠创新的重盾时]完全免疫无来源并且取消受击判定",
+  "modifier.bluearchive_tinker.absolutejustice.flavor": "公平决斗",
+
+  "modifier.bluearchive_tinker.sandstrom": "沙海的守望者",
+  "modifier.bluearchive_tinker.sandstrom.description": "在沙漠中执行任务时候每秒有5%概率寻得金矿并保存在你的背包里,受击遁入隐身状态,攻击退出隐身状态\n在沙漠之外的地方获得沙海之祝福,每有一件盔甲不在冷却都会在上一件的基础上获得40%免伤",
+  "modifier.bluearchive_tinker.sandstrom.flavor": "荒原...家乡",
+
+  "modifier.bluearchive_tinker.tacticsprotect": "战术防御",
+  "modifier.bluearchive_tinker.tacticsprotect.description": "获得额外等同于该词条等级数量的升级槽,能力槽和防御槽。护甲耐久损耗降低70%\n生命值首次跌入20%以下的时候获得最大生命30%的伤害吸收,冷却20秒,并且获得持续10秒的等同于盔甲词条等级的抗性提升（不会大于4级）和红温效果(至高词条等级对应的等级为上限,每触发一次提升一级)。并且对周围8*词条等级范围内的怪物造成等同于护盾值的伤害。",
+  "modifier.bluearchive_tinker.tacticsprotect.flavor": "对勇者的嘉奖",
+
+  "modifier.bluearchive_tinker.bha": "临战",
+  "modifier.bluearchive_tinker.bha.description": "攻击次数八次后的第九次攻击转而造成400% * 词条等级的全伤害加成的伤害,获得额外抢夺效果",
+  "modifier.bluearchive_tinker.bha.flavor": "冲锋陷阵,百战当先",
+
+  "modifier.bluearchive_tinker.natived": "原生",
+  "modifier.bluearchive_tinker.natived.description": "增加每级2点幸运和26.6% X 等级的攻击速度,你受到单次伤害不会超过最大生命26%,触发时候获得4秒免疫时间,并且取消周围生物敌意。获得额外时运效果",
+  "modifier.bluearchive_tinker.natived.flavor": "初始形态",
+
+  "modifier.bluearchive_tinker.watery": "水着",
+  "modifier.bluearchive_tinker.watery.description": "大幅缩减你所有物品栏的工具的冷却速度(4倍）",
+  "modifier.bluearchive_tinker.watery.flavor": "专注速度",
+
+  "modifier.bluearchive_tinker.neverend": "永不休止",
+  "modifier.bluearchive_tinker.neverend.description": "当你自己生命值低于30%时获得1级红温效果,拥有此状态时候,每级红温效果攻击附带目标最大生命9%的无视魔抗伤害，此伤害无法被增幅",
+  "modifier.bluearchive_tinker.neverend.flavor": "bro从来不会红温的,对吧",
+
+  "modifier.bluearchive_tinker.tacticsattack": "战术性进攻",
+  "modifier.bluearchive_tinker.tacticsattack.description": "获得额外等同于该词条等级数量的升级槽和能力槽,你的工具耐久损降低70%\n无视目标的无敌帧",
+  "modifier.bluearchive_tinker.tacticsattack.flavor": "对勇者的嘉奖",
+
+  "modifier.bluearchive_tinker.reliable": "可靠",
+  "modifier.bluearchive_tinker.reliable.description": "[常驻效果]对生命占比大于50%的目标额外造成2倍的伤害,在一场持续的战斗中,你会累计身上的箭矢（每一次受伤都会累计箭矢）,箭矢越多,你造成的额外伤害就越高（每根提供8%增伤效果）,达到10根箭矢再受伤会获得红温效果（）每次受伤会延长红温5秒。累计达到20根箭矢会造成一次145倍的伤害,清除所有箭矢并且获得10秒的抗性提升2效果\n[当主手或者副手持有工匠匠心的幻海化梦词条时]基础伤害提升至1.3倍,每次攻击均有10%概率立刻恢复全身装备冷却,玩家移速锁定至130%,并且获得可以叠加的伤害吸收,至多叠加至最大生命的4倍。持有物品属于ETSH的离子化射线炮时额外获得免伤效果\n[主手或副手未持有幻海化梦词条时]大幅提升免伤,夜间手持额外获得夜视效果和急迫",
+  "modifier.bluearchive_tinker.reliable.flavor": "冲锋陷阵,百战当先",
+
+  "material.bluearchive_tinker.invert_hoshino": "星野●恐怖",
+
+  "modifier.bluearchive_tinker.eventually": "终焉",
+  "modifier.bluearchive_tinker.eventually.flavor": "聚...散",
+  "modifier.bluearchive_tinker.eventually.description":"获得持久的狩猎状态，主手持有时，处于狩猎状态，你10格以内的所有友善生物和玩家以外的生物会直接化为齑粉",
+
+  "modifier.bluearchive_tinker.transmigration": "轮回",
+  "modifier.bluearchive_tinker.transmigration.flavor": "1,2,3,4,5,6,7,8,9,0...1,2...",
+  "modifier.bluearchive_tinker.transmigration.description":"你身上的狩猎效果无法被牛奶移除",
+
+  "modifier.bluearchive_tinker.trauma": "创伤",
+  "modifier.bluearchive_tinker.trauma.flavor": "痛苦仅是一瞬",
+  "modifier.bluearchive_tinker.trauma.description":"处于狩猎状态你受到的“伤害”会被全部抵消"
+}

@@ -1,0 +1,12 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item": "bluearchive_tinker:mika_ingot"
+  },
+  "temperature": 1000,
+  "time": 2,
+  "result":{
+    "fluid": "bluearchive_tinker:mikafluid",
+    "amount": 90
+  }
+}

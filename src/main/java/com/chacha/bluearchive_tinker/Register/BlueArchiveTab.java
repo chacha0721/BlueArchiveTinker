@@ -18,7 +18,7 @@ public class BlueArchiveTab {
     public static final Supplier<CreativeModeTab> BLUEARCHIVETAB = creative_mode_tab.register("bluearchivetab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .title(Component.translatable(BlueArchiveTab))
-            .icon(BlueArchiveItem.Hoshino.get()::getDefaultInstance)
+            .icon(BlueArchiveItem.BlueArchive.get()::getDefaultInstance)
             .displayItems((itemDisplayParameters, output) -> {
                 for (RegistryObject<Item> itemsDeferredRegister : BlueArchiveItem.getMaterials()) {
                     if (itemsDeferredRegister.isPresent()) {
