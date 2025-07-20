@@ -2,10 +2,7 @@ package com.chacha.bluearchive_tinker.Register;
 
 
 import com.chacha.bluearchive_tinker.BlueArchiveTinker;
-import com.chacha.bluearchive_tinker.Content.Modifier.Cake;
-import com.chacha.bluearchive_tinker.Content.Modifier.MikaStars;
-import com.chacha.bluearchive_tinker.Content.Modifier.Play;
-import com.chacha.bluearchive_tinker.Content.Modifier.PlayTwo;
+import com.chacha.bluearchive_tinker.Content.Modifier.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
 import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
@@ -15,7 +12,7 @@ public class BlueArchiveModifier {
     //材料词条
     public static final StaticModifier<MikaStars> MikiaStars = MODIFIERS.register("mikastars", MikaStars::new);
     public static final StaticModifier<Play> Play = MODIFIERS.register("play", Play::new);
-    public static final StaticModifier<Cake> MikaCake = MODIFIERS.register("mikacake", Cake::new);
+    public static final StaticModifier<Cake> Cake = MODIFIERS.register("cake", Cake::new);
     public static final StaticModifier<PlayTwo> PlayTwo = MODIFIERS.register("playtwo", PlayTwo::new);
     public static final StaticModifier<PlayTwo> KaiserBlueAttack = MODIFIERS.register("kaiserblueattack", PlayTwo::new);
     public static final StaticModifier<PlayTwo> KaiserBlueSup = MODIFIERS.register("kaiserbluesup", PlayTwo::new);
@@ -32,7 +29,7 @@ public class BlueArchiveModifier {
     public static final StaticModifier<PlayTwo> Eventually = MODIFIERS.register("eventually", PlayTwo::new);
     public static final StaticModifier<PlayTwo> Transmigration = MODIFIERS.register("transmigration", PlayTwo::new);
     public static final StaticModifier<PlayTwo> Trauma = MODIFIERS.register("trauma", PlayTwo::new);
-
+    public static final StaticModifier<MikaCake> MikaCake = MODIFIERS.register("mikacake", MikaCake::new);
     public static void register(IEventBus bus) {
         MODIFIERS.register(bus);
     }

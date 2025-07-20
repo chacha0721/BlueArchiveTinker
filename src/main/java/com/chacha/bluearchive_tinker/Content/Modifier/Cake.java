@@ -92,7 +92,7 @@ public class Cake extends Modifier implements MeleeDamageModifierHook, MeleeHitM
     private UUID getUUID(Modifier modifier, EquipmentSlot slot, Attribute attribute) {
         //类型  名称 = 模组名称+槽位id+attribute项对应的字符串
         String s = modifier.getId() + slot.getName() + attribute.getDescriptionId();
-        //返回  ？？？转换（s的赋值？）
+        //返回
         return UUID.nameUUIDFromBytes(s.getBytes());
     }
 
