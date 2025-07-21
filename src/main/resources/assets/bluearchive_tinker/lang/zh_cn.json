@@ -30,9 +30,13 @@
   "modifier.bluearchive_tinker.mikastars.description": "命中生物时会对生物施加虚弱、缓慢、挖掘疲劳、持续伤害、发光 造成的伤害必定暴击！！！ 自身护甲高于目标时造成额外2倍伤害 ",
   "modifier.bluearchive_tinker.mikastars.flavor": "未花才不是魔女~是老师的公主殿下~",
 
-  "modifier.bluearchive_tinker.mikacake": "茶话会",
-  "modifier.bluearchive_tinker.mikacake.description": "词条等级*1 *25% 增加生命值(最终生命值)、获取飞行能力、滑翔能力、词条等级*1 0.05概率闪避攻击",
-  "modifier.bluearchive_tinker.mikacake.flavor": "老师，由我来守护！",
+  "modifier.bluearchive_tinker.cake": "茶话会",
+  "modifier.bluearchive_tinker.cake.description": "词条等级*1 *25% 增加生命值(最终生命值)、获取飞行能力、滑翔能力、词条等级*1 0.05概率闪避攻击",
+  "modifier.bluearchive_tinker.cake.flavor": "老师，由我来守护！",
+
+  "modifier.bluearchive_tinker.mikacake": "瑞士卷神力！！！",
+  "modifier.bluearchive_tinker.mikacake.description": "会根据瑞士卷的数量增伤伤害(64/1.5 128/2 196/2.5 256/3) 每分钟都会给予瑞士卷",
+  "modifier.bluearchive_tinker.mikacake.flavor": "啊哈哈哈，我也要给你塞瑞士卷",
 
   "subtitles.bluearchive_tinker.mika_ahhh": "啊哈哈，牡蛎牡蛎~",
 
