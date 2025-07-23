@@ -90,7 +90,7 @@ public class BlueArchiveItem {
             Component.literal("在三一的著名甜品店，咖啡厅千层出售的芭菲").withStyle(style -> style.withColor(0xFFF159)),
             Component.literal("在柔软的冰激凌上层层堆叠的点心、糖浆、鲜奶油、水果和谐地融为了一体 果然正宗！").withStyle(style -> style.withColor(0xFFF159))
     }), Favorite);
-    public static final Supplier<Item> MikeCake = registerToList(ITEM, "mika_cake", () -> new ColorFulItem(commonItem.food(new FoodProperties.Builder()
+    public static final Supplier<Item> MikaCake = registerToList(ITEM, "mika_cake", () -> new ColorFulItem(commonItem.food(new FoodProperties.Builder()
             .nutrition(20)
             .saturationMod(3f)
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 600, 2), 1)

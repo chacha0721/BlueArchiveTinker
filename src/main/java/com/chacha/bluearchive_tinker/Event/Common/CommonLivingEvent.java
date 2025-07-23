@@ -1,14 +1,32 @@
 package com.chacha.bluearchive_tinker.Event.Common;
 
 import com.chacha.bluearchive_tinker.BlueArchiveTinker;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import com.chacha.bluearchive_tinker.Register.BlueArchiveItem;
+import com.chacha.bluearchive_tinker.Register.BlueArchiveModifier;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import slimeknights.tconstruct.library.tools.helper.ModifierUtil;
 
 @Mod.EventBusSubscriber(modid = BlueArchiveTinker.MODID)
 public class CommonLivingEvent {
     @SubscribeEvent
-    public static void onDeath(LivingDeathEvent event) {
-
+    public static void onAttackWithMikaCake(LivingHurtEvent event) {
+        var entity=event.getSource().getEntity();
+        boolean hasMikaCakeModifier=false;
+        if(entity instanceof Player player){
+            for(ItemStack stack:player.getInventory().armor){
+                if(ModifierUtil.getModifierLevel(stack, BlueArchiveModifier.MikaCake.getId())>0){
+                    hasMikaCakeModifier=true;
+                    break;
+                }
+            }
+            int cakeCount=player.getInventory().countItem(BlueArchiveItem.MikaCake.get());
+            if(hasMikaCakeModifier){
+                event.setAmount(event.getAmount() * Math.min(1+cakeCount * 0.03f,2.5f));
+            }
+        }
     }
 }

@@ -20,7 +20,7 @@ import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 import java.util.Arrays;
 import java.util.List;
 
-public class MikaCake extends Modifier implements ProcessLootModifierHook , MeleeDamageModifierHook {
+public class MikaCake extends Modifier implements ProcessLootModifierHook , MeleeDamageModifierHook  {
     @Override
     protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
         hookBuilder.addHook(this,ModifierHooks.PROCESS_LOOT,ModifierHooks.MELEE_DAMAGE);
@@ -39,11 +39,10 @@ public class MikaCake extends Modifier implements ProcessLootModifierHook , Mele
 
     @Override
     public void processLoot(IToolStackView tool, ModifierEntry modifier, List<ItemStack> generatedLoot, LootContext context) {
-        //击杀目标最大生命>20的生物随机1-3
         var target=context.getParamOrNull(LootContextParams.THIS_ENTITY);
         if(target instanceof LivingEntity living&&living.getMaxHealth()>20){
             int count=target.level().getRandom().nextInt(3)+1;
-            ItemStack mikaCake=new ItemStack(BlueArchiveItem.MikeCake.get(),count);
+            ItemStack mikaCake=new ItemStack(BlueArchiveItem.MikaCake.get(),count);
             generatedLoot.add(mikaCake);
         }
     }
@@ -52,7 +51,8 @@ public class MikaCake extends Modifier implements ProcessLootModifierHook , Mele
     public float getMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
         var player=context.getPlayerAttacker();
         if(player==null)return damage;
-        int cakeCount=player.getInventory().countItem(BlueArchiveItem.MikeCake.get());
+        int cakeCount=player.getInventory().countItem(BlueArchiveItem.MikaCake.get());
         return damage * Math.min(1+cakeCount * 0.03f,2.5f);
     }
+
 }
