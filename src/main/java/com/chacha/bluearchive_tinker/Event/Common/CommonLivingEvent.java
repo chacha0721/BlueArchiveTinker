@@ -5,6 +5,8 @@ import com.chacha.bluearchive_tinker.Register.BlueArchiveItem;
 import com.chacha.bluearchive_tinker.Register.BlueArchiveModifier;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -27,6 +29,14 @@ public class CommonLivingEvent {
             if(hasMikaCakeModifier){
                 event.setAmount(event.getAmount() * Math.min(1+cakeCount * 0.03f,2.5f));
             }
+        }
+    }
+    @SubscribeEvent
+    public static void onLivingExplodeFromData(LivingEvent.LivingTickEvent event){
+        var entity=event.getEntity();
+        if(entity.level().isClientSide())return;
+        if(entity.getPersistentData().getBoolean("blue_archive_tinker:should_explode")){
+            entity.level().explode(null,entity.getX(),entity.getY(),entity.getZ(),5,true, Level.ExplosionInteraction.TNT);
         }
     }
 }

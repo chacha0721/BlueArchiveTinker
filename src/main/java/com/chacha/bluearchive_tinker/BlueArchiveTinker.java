@@ -1,5 +1,6 @@
 package com.chacha.bluearchive_tinker;
 
+import com.chacha.bluearchive_tinker.Content.Network.BlueArchiveTinkerChanel;
 import com.chacha.bluearchive_tinker.Register.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,6 +19,7 @@ public class BlueArchiveTinker {
         BlueArchiveFluid.register(modEventBus);
         BlueArchiveModifier.register(modEventBus);
         BlueArchiveSounds.register(modEventBus);
+        BlueArchiveTinkerChanel.register();
     }
 
     public static String makeDescriptionId(String type, String name) {
