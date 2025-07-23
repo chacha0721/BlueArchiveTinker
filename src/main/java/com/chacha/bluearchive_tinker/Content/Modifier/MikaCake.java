@@ -30,9 +30,9 @@ public class MikaCake extends Modifier implements ProcessLootModifierHook , Mele
     public @NotNull List<Component> getDescriptionList(int level) {
         int[] color = new int[]{0xFEEAF3, 0xffaaff, 0x55c4ff};
         if (descriptionList == null) {
-            descriptionList = Arrays.asList(DynamicComponentUtil.scrollColorfulText.getColorfulText(getTranslationKey() + ".flavor", null, color, 20, 20, true),
-                    DynamicComponentUtil.scrollColorfulText.getColorfulText(getTranslationKey() + ".description", null, color, 20, 1000, true))
-            ;
+            descriptionList = Arrays.asList(
+                    DynamicComponentUtil.scrollColorfulText.getColorfulText(getTranslationKey() + ".flavor", null, color, 20, 20, true),
+                    DynamicComponentUtil.scrollColorfulText.getColorfulText(getTranslationKey() + ".description", null, color, 20, 1000, true));
         }
         return super.getDescriptionList(level);
     }
