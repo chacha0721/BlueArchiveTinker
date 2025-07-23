@@ -60,6 +60,8 @@ public class BlueArchiveItem {
     public static final Supplier<Item> violane = registerToList(ITEM, "violane", () -> new ColorFulItem(commonItem, 0xE4A60C, new Component[]{
             Component.literal("阿罗娜！！！还我青辉石！！！").withStyle(style -> style.withColor(0xCE0101)),
     }), Materials);
+    public static final Supplier<Item> BlueArchive = registerToList(ITEM, "bluearchive", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
+    }), Materials);
     public static final Supplier<Item> hand_cream = registerToList(ITEM, "hand_cream", () -> new ColorFulItem(commonItem, 0xE4A60C, new Component[]{
             Component.literal("高档化妆品品牌“Samuela”推出的热卖产品").withStyle(style -> style.withColor(0xFFF159)),
             Component.literal("让皮肤变得非常白皙透明，能更加自然地贴合皮肤，营造出健康的肤色").withStyle(style -> style.withColor(0xFFF159))
@@ -96,8 +98,7 @@ public class BlueArchiveItem {
             Component.literal("出自圣三一茶话会每日必备甜点~").withStyle(style -> style.withColor(0xFEEAF3)),
             Component.literal("相信我~吃过后你一定会爱上它的！").withStyle(style -> style.withColor(0xFEEAF3))
     }), Favorite);
-    public static final Supplier<Item> BlueArchive = registerToList(ITEM, "bluearchive", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
-    }), Materials);
+
     //以后不要再去tab类里面手动添加这些普通物品了,已经可以自动添加了
 
     /**
