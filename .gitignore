@@ -9,6 +9,7 @@
 out/
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+run-data
 
 # JIRA plugin
 atlassian-ide-plugin.xml

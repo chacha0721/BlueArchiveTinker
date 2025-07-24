@@ -45,27 +45,18 @@ public class MikaStars extends Modifier implements MeleeDamageModifierHook, Mele
 
 
     public float getMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
-        //检测护甲
         var target = context.getLivingTarget();
         var player = context.getPlayerAttacker();
         if (target != null && player instanceof ServerPlayer serverPlayer) {
             if (target.getArmorValue() < player.getArmorValue()) {
-                //修改伤害用局部变量缓存
                 damage = damage * 2f;
             }
-            //不暴击的时候才强制暴击伤害
             if (!context.isCritical()) {
-                //获取全局宝具伤害加成
                 CriticalHitEvent hitResult = ForgeHooks.getCriticalHit(context.getPlayerAttacker(), context.getLivingTarget(), true, 1.5f);
-                //如果呗别的事情取消了，不暴击
                 if (hitResult == null) return damage;
-                //必须发生服务端
                 if (context.getLevel().getServer() != null) {
-                    //player的暴击方法，在localplayer执行粒子
                     player.crit(target);
-                    //音效
                     serverPlayer.serverLevel().playSound(null, player.getOnPos(), SoundEvents.PLAYER_ATTACK_CRIT, SoundSource.AMBIENT, 1f, 1f);
-                    //返回最终伤害
                     return damage * hitResult.getDamageModifier();
                 }
             }
@@ -105,7 +96,7 @@ public class MikaStars extends Modifier implements MeleeDamageModifierHook, Mele
                 int pas = target.level().getRandom().nextInt(8) - 4;
                 var spawnPos = targetPosition.add(pas, 7, pas);
                 var angle = targetPosition.subtract(spawnPos);
-                LargeFireball fireball = new SpecialLargeBall(player.level(), target, angle.x(), angle.y(), angle.z(), 0);
+                LargeFireball fireball = new SpecialLargeBall(player.level(), player, angle.x(), angle.y(), angle.z(), 50);
                 fireball.setPos(spawnPos);
                 player.level().addFreshEntity(fireball);
             }

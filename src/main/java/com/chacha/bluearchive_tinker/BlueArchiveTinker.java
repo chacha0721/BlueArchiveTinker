@@ -20,6 +20,7 @@ public class BlueArchiveTinker {
         BlueArchiveModifier.register(modEventBus);
         BlueArchiveSounds.register(modEventBus);
         BlueArchiveTinkerChanel.register();
+        BlueArchiveDamageType.init();
     }
 
     public static String makeDescriptionId(String type, String name) {
