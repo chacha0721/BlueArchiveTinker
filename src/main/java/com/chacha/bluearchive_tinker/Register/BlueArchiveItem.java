@@ -28,6 +28,15 @@ public class BlueArchiveItem {
     private final static List<RegistryObject<Item>> Materials = new ArrayList<>(List.of());
     @Getter
     private final static List<RegistryObject<Item>> Favorite = new ArrayList<>(List.of());
+    public static final Supplier<Item> mika_ingot = registerToList(ITEM, "mika_ingot", () -> new ColorFulItem(commonItem, 0xf2d6b3, new Component[]{
+            Component.literal("嗯！久等了吧？").withStyle(style -> style.withColor(0xFEEAF3)),
+            Component.literal("该轮到我出场啦☆").withStyle(style -> style.withColor(0xFEEAF3))
+    }), Materials);
+    public static final Supplier<Item> Seia = registerToList(ITEM, "seia", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
+            Component.literal("终于又与你重逢……").withStyle(style -> style.withColor(0xffefdd)),
+            Component.literal("我想我应该如此说").withStyle(style -> style.withColor(0xffefdd)),
+            Component.literal("我已久候，老师").withStyle(style -> style.withColor(0xffefdd))
+    }), Materials);
     public static final Supplier<Item> Hoshino = registerToList(ITEM, "hoshino", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
             Component.literal("呼哇，随便搞搞就行了吧").withStyle(style -> style.withColor(0xFFAAFF)),
             Component.literal("适当摸鱼一下也是很重要的嘛").withStyle(style -> style.withColor(0xFFAAFF))
@@ -35,10 +44,6 @@ public class BlueArchiveItem {
     public static final Supplier<Item> InvertHoshino = registerToList(ITEM, "invert_hoshino", () -> new ColorFulItem(commonItem, 0xD93570, new Component[]{
             Component.literal("......这份痛苦，根本没人能够体会").withStyle(style -> style.withColor(0xC82d57)),
             Component.literal("明明就什么也不知道").withStyle(style -> style.withColor(0xC82d57))
-    }), Materials);
-    public static final Supplier<Item> mika_ingot = registerToList(ITEM, "mika_ingot", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
-            Component.literal("嗯！久等了吧？").withStyle(style -> style.withColor(0xFEEAF3)),
-            Component.literal("该轮到我出场啦☆").withStyle(style -> style.withColor(0xFEEAF3))
     }), Materials);
     public static final Supplier<Item> HoshinoSwimsuit = registerToList(ITEM, "hoshino_swimsuit", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
             Component.literal("唔哇~...啊，老师~").withStyle(style -> style.withColor(0xFFAAFF)),
@@ -54,7 +59,7 @@ public class BlueArchiveItem {
             Component.literal("……并没有感觉兴奋什么的，才没有这样的事").withStyle(style -> style.withColor(0xfcf8f6))
     }), Materials);
 
-    public static final Supplier<Item> KaiserBlue = registerToList(ITEM, "kaiser_blue", () -> new ColorFulItem(commonItem, 0x94b8c6, new Component[]{
+    public static final Supplier<Item> KaiserBlue = registerToList(ITEM, "kaiser_blue.json", () -> new ColorFulItem(commonItem, 0x94b8c6, new Component[]{
             Component.literal("凯撒科技之一的材料").withStyle(style -> style.withColor(0x696a6b)),
     }), Materials);
     public static final Supplier<Item> violane = registerToList(ITEM, "violane", () -> new ColorFulItem(commonItem, 0xE4A60C, new Component[]{

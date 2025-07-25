@@ -2,9 +2,18 @@ package com.chacha.bluearchive_tinker.Content.Modifier;
 
 import com.chacha.bluearchive_tinker.BlueArchiveTinker;
 import com.chacha.bluearchive_tinker.Content.Data.BlueArchiveTinkerBucketModelProvider;
+import com.chacha.bluearchive_tinker.Content.Item.Projectile.SpecialLargeBall;
 import com.chacha.bluearchive_tinker.Register.BlueArchiveModifier;
+import com.chacha.bluearchive_tinker.Register.BlueArchiveToolNBTKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.LargeFireball;
+import net.minecraft.world.phys.Vec3;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
@@ -24,25 +33,21 @@ public class MikaNs extends Modifier implements MeleeDamageModifierHook, MeleeHi
     @Override
     public float getMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
         //获取工具容器
-        //isspecialattack 后改为召唤陨石！！！
         ModDataNBT data = tool.getPersistentData();
         int isspecialattack = data.getInt(special_attack);
         int attackCount =  data.getInt(tool_count_key);
         if (isspecialattack >=5){
-            damage*=10f;
-            isspecialattack=0;
+            damage*=3.14f;
         } else {if (attackCount >= 4) {
             damage *= 1.66f;
             attackCount = 0;
         }}
         data.putInt(tool_count_key, attackCount+1);
-        data.putInt(special_attack,isspecialattack+1);
         return damage;
     }
     protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
         hookBuilder.addHook(this, ModifierHooks.MELEE_DAMAGE, ModifierHooks.MELEE_HIT);
     }
-
 
 
 }

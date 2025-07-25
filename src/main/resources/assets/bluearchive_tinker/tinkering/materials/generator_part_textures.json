@@ -1,5 +1,11 @@
-{
+[{
   "replace": true,
   "parts": "assets/bluearchive_tinker/tinkering/materials/mika_ingot",
   "stat_type": "bluearchive_tinker:mika_ingot"
-}
+},
+  {
+    "replace": true,
+    "parts": "assets/bluearchive_tinker/tinkering/materials/kaiser_bluie",
+    "stat_type": "bluearchive_tinker:kaiser_bluie"
+  }
+]

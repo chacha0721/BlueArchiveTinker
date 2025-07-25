@@ -5,7 +5,7 @@
     "ignoreMaterialStats": false,
     "supportedStats":
     [
-  "tconstruct:head",
+      "tconstruct:head",
       "tconstruct:handle",
       "tconstruct:binding",
       "tconstruct:repair_kit",
@@ -27,11 +27,13 @@
         "type": "tconstruct:grey_to_color",
         "palette":
         [
-          {"color":"FACDE1", "grey":0},
+          { "color":"FACDE1", "grey":0},
           { "color":"F0B7D0", "grey":63},
           { "color":"ECB0CB", "grey":102},
           { "color":"F898C3", "grey":140},
-          { "color":"FEEAF3", "grey":178}
+          { "color":"FEEAF3", "grey":178},
+          { "color": "ECB0CB", "grey": 216},
+          { "color": "F898C3", "grey": 255}
         ]
       }
     }
