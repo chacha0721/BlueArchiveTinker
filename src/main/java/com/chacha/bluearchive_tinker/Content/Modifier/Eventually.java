@@ -1,4 +1,7 @@
 package com.chacha.bluearchive_tinker.Content.Modifier;
 
-public class Eventually {
+import slimeknights.tconstruct.library.modifiers.Modifier;
+
+public class Eventually extends Modifier {
+
 }
