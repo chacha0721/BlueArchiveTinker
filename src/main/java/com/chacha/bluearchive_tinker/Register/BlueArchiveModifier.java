@@ -15,6 +15,7 @@ public class BlueArchiveModifier {
     public static final StaticModifier<Cake> Cake = MODIFIERS.register("cake", Cake::new);
     public static final StaticModifier<MikaCake> MikaCake = MODIFIERS.register("mikacake", MikaCake::new);
     public static final StaticModifier<SetStats> setstat = MODIFIERS.register("setstat", SetStats::new);
+    public static final StaticModifier<MikaNs> MikaNs = MODIFIERS.register("mikans", MikaNs::new);
     public static void register(IEventBus bus) {
         MODIFIERS.register(bus);
     }

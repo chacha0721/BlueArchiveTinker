@@ -30,8 +30,8 @@
 
   "material.bluearchive_tinker.mika_ingot": "圣园未花",
 
-  "modifier.bluearchive_tinker.mikastars": "Benedictio",
-  "modifier.bluearchive_tinker.mikastars.description": "命中生物时会对生物施加虚弱、缓慢、挖掘疲劳、持续伤害、发光 造成的伤害必定暴击！！！ 自身护甲高于目标时造成额外2倍伤害 ",
+  "modifier.bluearchive_tinker.mikastars": "星之呼唤",
+  "modifier.bluearchive_tinker.mikastars.description": "命造成的伤害必定暴击！！！ 自身护甲高于目标时造成额外2倍伤害 攻击三次后会召唤最终伤害*0.3的火球 ",
   "modifier.bluearchive_tinker.mikastars.flavor": "未花才不是魔女~是老师的公主殿下~",
 
   "modifier.bluearchive_tinker.cake": "茶话会",
@@ -41,6 +41,10 @@
   "modifier.bluearchive_tinker.mikacake": "瑞士卷神力！！！",
   "modifier.bluearchive_tinker.mikacake.description": "会根据瑞士卷的数量增伤伤害(64/1.5 128/2 196/2.5 256/3) 每分钟都会给予瑞士卷",
   "modifier.bluearchive_tinker.mikacake.flavor": "啊哈哈哈，我也要给你塞瑞士卷",
+
+  "modifier.bluearchive_tinker.mikans": "Benedictio",
+  "modifier.bluearchive_tinker.mikans.description": "攻击3次后下一次造成一次强化攻击 每级按目标生命百分比提供额外伤害（满血时达到最大值）",
+  "modifier.bluearchive_tinker.mikans.flavor": "又变得更强了，这也是为了老师哦",
 
   "subtitles.bluearchive_tinker.mika_ahhh": "啊哈哈，牡蛎牡蛎~",
 

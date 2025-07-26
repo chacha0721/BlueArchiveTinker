@@ -11,6 +11,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.LargeFireball;
 import net.minecraft.world.phys.Vec3;
@@ -29,20 +30,25 @@ import java.util.UUID;
 public class MikaNs extends Modifier implements MeleeDamageModifierHook, MeleeHitModifierHook {
     // 定义存储键 ResourceLocation 是 Minecraft 中用于唯一标识游戏内资源的类 通过 “命名空间（namespace）+ 路径（path）” 的格式
     private final ResourceLocation tool_count_key = BlueArchiveTinker.getResource("tool_attack_count");
-    private final ResourceLocation special_attack = BlueArchiveTinker.getResource("special_attack");
+    private static final float HEALTH_BONUS_PER_LEVEL = 0.2f;
     @Override
     public float getMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
         //获取工具容器
         ModDataNBT data = tool.getPersistentData();
-        int isspecialattack = data.getInt(special_attack);
         int attackCount =  data.getInt(tool_count_key);
-        if (isspecialattack >=5){
-            damage*=3.14f;
-        } else {if (attackCount >= 4) {
+        {if (attackCount >= 4) {
             damage *= 1.66f;
             attackCount = 0;
         }}
         data.putInt(tool_count_key, attackCount+1);
+        LivingEntity target = context.getLivingTarget();
+        if (target != null) {
+            // healthPercent = 目标当前生命值 / 目前最大生命值
+            float healthPercent = target.getHealth() / target.getMaxHealth();
+            // 每级按目标生命百分比提供额外伤害（满血时达到最大值）
+            float healthBonus = 1 + (healthPercent * HEALTH_BONUS_PER_LEVEL * modifier.getLevel());
+            damage *= healthBonus;
+        }
         return damage;
     }
     protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
