@@ -32,10 +32,18 @@ public class BlueArchiveItem {
             Component.literal("嗯！久等了吧？").withStyle(style -> style.withColor(0xFEEAF3)),
             Component.literal("该轮到我出场啦☆").withStyle(style -> style.withColor(0xFEEAF3))
     }), Materials);
+    public static final Supplier<Item> mikaSwimsuit = registerToList(ITEM, "mika_swimsuit", () -> new ColorFulItem(commonItem, 0xf2d6b3, new Component[]{
+            Component.literal("圣园未花，以泳装姿态再度登场~☆是这种感觉吧？").withStyle(style -> style.withColor(0xFEEAF3)),
+            Component.literal("今后也请多多指教啦，老师！").withStyle(style -> style.withColor(0xFEEAF3))
+    }), Materials);
     public static final Supplier<Item> Seia = registerToList(ITEM, "seia", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
             Component.literal("终于又与你重逢……").withStyle(style -> style.withColor(0xffefdd)),
             Component.literal("我想我应该如此说").withStyle(style -> style.withColor(0xffefdd)),
             Component.literal("我已久候，老师").withStyle(style -> style.withColor(0xffefdd))
+    }), Materials);
+    public static final Supplier<Item> SeiaSwimsuit = registerToList(ITEM, "seia_swimsuit", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
+            Component.literal("大海......不知已期盼此刻多久").withStyle(style -> style.withColor(0xffefdd)),
+            Component.literal("何不共赏这浮生一瞬的泡沫光华").withStyle(style -> style.withColor(0xffefdd))
     }), Materials);
     public static final Supplier<Item> Hoshino = registerToList(ITEM, "hoshino", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
             Component.literal("呼哇，随便搞搞就行了吧").withStyle(style -> style.withColor(0xFFAAFF)),
