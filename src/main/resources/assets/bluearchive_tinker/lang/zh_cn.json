@@ -53,6 +53,8 @@
 
   "subtitles.bluearchive_tinker.mika_ahhh": "啊哈哈，牡蛎牡蛎~",
 
+
+
   "material.bluearchive_tinker.kaiser_blue": "凯撒锭●蓝",
 
   "modifier.bluearchive_tinker.kaiserbluetank": "大号机甲",
@@ -65,8 +67,37 @@
 
   "modifier.bluearchive_tinker.kaiserbluesup": "特殊金属",
   "modifier.bluearchive_tinker.kaiserbluesup.description": "自身护甲值总额*2 韧性总额*1.5",
-  "modifier.bluearchive_tinker.kaiserbluesup.flavor": "又大又粗，厉害吧"
+  "modifier.bluearchive_tinker.kaiserbluesup.flavor": "又大又粗，厉害吧",
 
 
 
+ "material.bluearchive_tinker.yuzu": "柚子",
+
+  "modifier.bluearchive_tinker.gamestart": "游戏开始！",
+  "modifier.bluearchive_tinker.gamestart.description": "对以1名敌方单位为中心的圆形范围内的敌方单位造成自身攻击力200%的伤害",
+  "modifier.bluearchive_tinker.gamestart.flavor": "瞄准，已锁定！",
+
+  "modifier.bluearchive_tinker.gamemaster": "游戏领域大神！",
+  "modifier.bluearchive_tinker.gamemaster.description": "加全属性20% 爆伤增加150%",
+  "modifier.bluearchive_tinker.gamemaster.flavor": "我会加油的……！",
+
+  "modifier.bluearchive_tinker.uzqueen": "UZQueen",
+  "modifier.bluearchive_tinker.uzqueen.description": "血量低于30%时全属性提升,爆伤大幅度提升200%,同时免疫负面效果和控制,低于10点伤害无效,持续15s,冷却90s",
+  "modifier.bluearchive_tinker.uzqueen.flavor": "我是王牌驾驶员！虽说只是在游戏里…",
+
+  "modifier.bluearchive_tinker.courage": "竭尽全力的勇气",
+  "modifier.bluearchive_tinker.courage.description": "使用EX技能或者触发其词条时6s内暴击伤害增加300%",
+  "modifier.bluearchive_tinker.courage.flavor": "做好觉悟吧！",
+
+  "modifier.bluearchive_tinker.combo": "打出COMBO！",
+  "modifier.bluearchive_tinker.combo.description": "对同一敌人造成的伤害逐渐提高",
+  "modifier.bluearchive_tinker.combo.flavor": "我，我要上了！",
+
+  "modifier.bluearchive_tinker.sad": "社恐",
+  "modifier.bluearchive_tinker.sad.description": "与除千年系,圣娅系,以外的ba系材料搭配会降低基础属性30%",
+  "modifier.bluearchive_tinker.sad.flavor": "咿……对不起……",
+
+  "modifier.bluearchive_tinker.gamefriendship": "游戏开发部的友谊",
+  "modifier.bluearchive_tinker.gamefriendship.description": "未来可期",
+  "modifier.bluearchive_tinker.gamefriendship.flavor": "大家辛苦了！诶嘿嘿…"
 }

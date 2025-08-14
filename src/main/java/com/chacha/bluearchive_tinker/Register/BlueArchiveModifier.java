@@ -17,6 +17,13 @@ public class BlueArchiveModifier {
     public static final StaticModifier<SetStats> setstat = MODIFIERS.register("setstat", SetStats::new);
     public static final StaticModifier<MikaNs> MikaNs = MODIFIERS.register("mikans", MikaNs::new);
     public static final StaticModifier<KaiserBlueAttack> KaiserBlueAttack  = MODIFIERS.register("kaiserblueattack",KaiserBlueAttack::new);
+    public static final StaticModifier<GameStart> GameStart = MODIFIERS.register("gamestart", GameStart::new);
+    public static final StaticModifier<GameMaster> GameMaster = MODIFIERS.register("gamemaster", GameMaster::new);
+    public static final StaticModifier<UZQueen> UZQueen = MODIFIERS.register("uzqueen", UZQueen::new);
+    public static final StaticModifier<Courage> Courage = MODIFIERS.register("courage", Courage::new);
+    public static final StaticModifier<Combo> Combo = MODIFIERS.register("combo", Combo::new);
+    public static final StaticModifier<SAD> SAD = MODIFIERS.register("sad", SAD::new);
+    public static final StaticModifier<GameFriendship> GameFriendship = MODIFIERS.register("gamefriendship", GameFriendship::new);
     public static void register(IEventBus bus) {
         MODIFIERS.register(bus);
     }

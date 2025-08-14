@@ -1,0 +1,40 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:gamestart"
+    },{
+      "level": 1,
+      "name": "bluearchive_tinker:uzqueen"
+    },{
+      "level": 1,
+      "name": "bluearchive_tinker:courage"
+    },
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:combo"
+    },
+    {
+      "level": 1,
+      "name": "bluearchive_tinker:gamefriendship"
+    },{
+      "level": 1,
+      "name": "bluearchive_tinker:sad"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:gamemaster"
+      },
+      {
+        "level": 1,
+        "name": "bluearchive_tinker:gamefriendship"
+      },{
+        "level": 1,
+        "name": "bluearchive_tinker:sad"
+      }
+    ]
+  }
+}
