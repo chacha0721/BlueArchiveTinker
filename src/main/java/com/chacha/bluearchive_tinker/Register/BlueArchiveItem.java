@@ -45,6 +45,10 @@ public class BlueArchiveItem {
             Component.literal("大海......不知已期盼此刻多久").withStyle(style -> style.withColor(0xffefdd)),
             Component.literal("何不共赏这浮生一瞬的泡沫光华").withStyle(style -> style.withColor(0xffefdd))
     }), Materials);
+    public static final Supplier<Item> NagisaSwimsuit = registerToList(ITEM, "nagisa_swimsuit", () -> new ColorFulItem(commonItem, 0xfce5c3, new Component[]{
+            Component.literal("您好，老师").withStyle(style -> style.withColor(0xfdeacf)),
+            Component.literal("愿您能在这短暂的休息中得到些许放松").withStyle(style -> style.withColor(0xfdeacf))
+    }), Materials);
     public static final Supplier<Item> Hoshino = registerToList(ITEM, "hoshino", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
             Component.literal("呼哇，随便搞搞就行了吧").withStyle(style -> style.withColor(0xFFAAFF)),
             Component.literal("适当摸鱼一下也是很重要的嘛").withStyle(style -> style.withColor(0xFFAAFF))
