@@ -87,6 +87,10 @@ public class BlueArchiveItem {
             Component.literal("高级化妆品厂商「Samuela」发售的最高级香水").withStyle(style -> style.withColor(0xFFF159)),
             Component.literal("是以「试一次，让可爱萦绕此身」的广告词而爆火的产品，也是旷世奇才调香师「Beyond」调制的12杰作之一").withStyle(style -> style.withColor(0xFFF159))
     }), Favorite);
+    public static final Supplier<Item> pillow = registerToList(ITEM, "pillow", () -> new ColorFulItem(commonItem, 0xb0cdf9, new Component[]{
+            Component.literal("星野声称「无论在哪都能访问梦之国度」的枕头").withStyle(style -> style.withColor(0xebf5f9)),
+            Component.literal("非常柔软而蓬松，但现在似乎已经停产了").withStyle(style -> style.withColor(0xebf5f9))
+    }), Favorite);
     public static final Supplier<Item> sponge_cake = registerToList(ITEM, "sponge_cake", () -> new ColorFulItem(commonItem.food(new FoodProperties.Builder()
             .nutrition(20).saturationMod(1.5f)
             .effect(() -> new MobEffectInstance(MobEffects.LUCK, 12000, 0), 1.0F)
@@ -115,6 +119,14 @@ public class BlueArchiveItem {
             Component.literal("出自圣三一茶话会每日必备甜点~").withStyle(style -> style.withColor(0xFEEAF3)),
             Component.literal("相信我~吃过后你一定会爱上它的！").withStyle(style -> style.withColor(0xFEEAF3))
     }), Favorite);
+    public static final Supplier<Item> WhaleChocolate = registerToList(ITEM, "whale_chocolate", () -> new ColorFulItem(commonItem.food(new FoodProperties.Builder()
+            .nutrition(20)
+            .saturationMod(3f)
+            .build()), 0x693f35, new Component[]{
+            Component.literal("于海洋博物馆当作纪念品贩售的鲸鱼造型巧克力").withStyle(style -> style.withColor(0x4a2c25)),
+            Component.literal("以远远胜过其他鱼类巧克力的尺寸为傲").withStyle(style -> style.withColor(0x4a2c25))
+    }), Favorite);
+
 
     //以后不要再去tab类里面手动添加这些普通物品了,已经可以自动添加了
 
