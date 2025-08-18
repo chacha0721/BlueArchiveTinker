@@ -99,5 +99,16 @@
 
   "modifier.bluearchive_tinker.gamefriendship": "游戏开发部的友谊",
   "modifier.bluearchive_tinker.gamefriendship.description": "未来可期",
-  "modifier.bluearchive_tinker.gamefriendship.flavor": "大家辛苦了！诶嘿嘿…"
+  "modifier.bluearchive_tinker.gamefriendship.flavor": "大家辛苦了！诶嘿嘿…",
+
+  "material.bluearchive_tinker.azusa_swimsuit": "梓●泳装",
+
+  "material.bluearchive_tinker.hoshino": "星野●百战（图片暂未更新）",
+
+  "material.bluearchive_tinkerinvert_hoshino": "星野●恐怖",
+
+  "material.bluearchive_tinker.seia": "圣娅",
+
+  "material.bluearchive_tinker.seia_swimsuit": "圣娅●泳装",
+  "material.bluearchive_tinker.hoshino_swimsuit": "星野●泳装"
 }

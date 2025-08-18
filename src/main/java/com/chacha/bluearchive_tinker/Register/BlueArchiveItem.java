@@ -28,20 +28,20 @@ public class BlueArchiveItem {
     private final static List<RegistryObject<Item>> Materials = new ArrayList<>(List.of());
     @Getter
     private final static List<RegistryObject<Item>> Favorite = new ArrayList<>(List.of());
-    public static final Supplier<Item> mika_ingot = registerToList(ITEM, "mika_ingot", () -> new ColorFulItem(commonItem, 0xf2d6b3, new Component[]{
+    public static final Supplier<Item> mika_ingot = registerToList(ITEM, "mika_ingot", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
             Component.literal("嗯！久等了吧？").withStyle(style -> style.withColor(0xFEEAF3)),
             Component.literal("该轮到我出场啦☆").withStyle(style -> style.withColor(0xFEEAF3))
     }), Materials);
-    public static final Supplier<Item> mikaSwimsuit = registerToList(ITEM, "mika_swimsuit", () -> new ColorFulItem(commonItem, 0xf2d6b3, new Component[]{
+    public static final Supplier<Item> mikaSwimsuit = registerToList(ITEM, "mika_swimsuit", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
             Component.literal("圣园未花，以泳装姿态再度登场~☆是这种感觉吧？").withStyle(style -> style.withColor(0xFEEAF3)),
             Component.literal("今后也请多多指教啦，老师！").withStyle(style -> style.withColor(0xFEEAF3))
     }), Materials);
-    public static final Supplier<Item> Seia = registerToList(ITEM, "seia", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
+    public static final Supplier<Item> Seia = registerToList(ITEM, "seia", () -> new ColorFulItem(commonItem, 0xf2d6b3, new Component[]{
             Component.literal("终于又与你重逢……").withStyle(style -> style.withColor(0xffefdd)),
             Component.literal("我想我应该如此说").withStyle(style -> style.withColor(0xffefdd)),
             Component.literal("我已久候，老师").withStyle(style -> style.withColor(0xffefdd))
     }), Materials);
-    public static final Supplier<Item> SeiaSwimsuit = registerToList(ITEM, "seia_swimsuit", () -> new ColorFulItem(commonItem, 0xFEEAF3, new Component[]{
+    public static final Supplier<Item> SeiaSwimsuit = registerToList(ITEM, "seia_swimsuit", () -> new ColorFulItem(commonItem, 0xf2d6b3, new Component[]{
             Component.literal("大海......不知已期盼此刻多久").withStyle(style -> style.withColor(0xffefdd)),
             Component.literal("何不共赏这浮生一瞬的泡沫光华").withStyle(style -> style.withColor(0xffefdd))
     }), Materials);
@@ -61,9 +61,9 @@ public class BlueArchiveItem {
             Component.literal("唔哇~...啊，老师~").withStyle(style -> style.withColor(0xFFAAFF)),
             Component.literal("难得来一次，休闲地度过吧~").withStyle(style -> style.withColor(0xFFAAFF))
     }), Materials);
-    public static final Supplier<Item> Yuzu = registerToList(ITEM, "yuzu", () -> new ColorFulItem(commonItem, 0xFFE5F9, new Component[]{
-            Component.literal("游戏开发部，部长……柚子").withStyle(style -> style.withColor(0xFFAAFF)),
-            Component.literal("真…真的要……把我带上吗？").withStyle(style -> style.withColor(0xFFAAFF))
+    public static final Supplier<Item> Yuzu = registerToList(ITEM, "yuzu", () -> new ColorFulItem(commonItem, 0x3ffcc79, new Component[]{
+            Component.literal("游戏开发部，部长……柚子").withStyle(style -> style.withColor(0xc66f4a)),
+            Component.literal("真…真的要……把我带上吗？").withStyle(style -> style.withColor(0xc66f4a))
     }), Materials);
     public static final Supplier<Item> AzusaSwimsuit = registerToList(ITEM, "azusa_swimsuit", () -> new ColorFulItem(commonItem, 0xf4e8e0, new Component[]{
             Component.literal("白洲梓，到达目标地点大海").withStyle(style -> style.withColor(0xfcf8f6)),
