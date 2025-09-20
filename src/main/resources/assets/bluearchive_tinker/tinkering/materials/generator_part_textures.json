@@ -7,5 +7,9 @@
     "replace": true,
     "parts": "assets/bluearchive_tinker/tinkering/materials/kaiser_bluie",
     "stat_type": "bluearchive_tinker:kaiser_bluie"
-  }
+  },{
+  "replace": true,
+  "parts": "assets/bluearchive_tinker/tinkering/materials/yuzu",
+  "stat_type": "bluearchive_tinker:yuuzu"
+}
 ]

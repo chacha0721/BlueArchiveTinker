@@ -1,20 +1,11 @@
 package com.chacha.bluearchive_tinker.Content.Modifier;
 
 import com.chacha.bluearchive_tinker.BlueArchiveTinker;
-import com.chacha.bluearchive_tinker.Content.Data.BlueArchiveTinkerBucketModelProvider;
-import com.chacha.bluearchive_tinker.Content.Item.Projectile.SpecialLargeBall;
-import com.chacha.bluearchive_tinker.Register.BlueArchiveModifier;
-import com.chacha.bluearchive_tinker.Register.BlueArchiveToolNBTKey;
+import com.chacha.bluearchive_tinker.Util.DynamicComponentUtil;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.LargeFireball;
-import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
@@ -25,7 +16,8 @@ import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 import slimeknights.tconstruct.library.tools.nbt.ModDataNBT;
 
-import java.util.UUID;
+import java.util.Arrays;
+import java.util.List;
 
 public class MikaNs extends Modifier implements MeleeDamageModifierHook, MeleeHitModifierHook {
     // 定义存储键 ResourceLocation 是 Minecraft 中用于唯一标识游戏内资源的类 通过 “命名空间（namespace）+ 路径（path）” 的格式
@@ -54,6 +46,15 @@ public class MikaNs extends Modifier implements MeleeDamageModifierHook, MeleeHi
     protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
         hookBuilder.addHook(this, ModifierHooks.MELEE_DAMAGE, ModifierHooks.MELEE_HIT);
     }
-
+    @Override
+    public @NotNull List<Component> getDescriptionList(int level) {
+        int[] color = new int[]{0xFEEAF3, 0xffaaff, 0x55c4ff};
+        if (descriptionList == null) {
+            descriptionList = Arrays.asList(
+                    DynamicComponentUtil.scrollColorfulText.getColorfulText(getTranslationKey() + ".flavor", null, color, 20, 20, true),
+                    DynamicComponentUtil.scrollColorfulText.getColorfulText(getTranslationKey() + ".description", null, color, 20, 1000, true));
+        }
+        return super.getDescriptionList(level);
+    }
 
 }

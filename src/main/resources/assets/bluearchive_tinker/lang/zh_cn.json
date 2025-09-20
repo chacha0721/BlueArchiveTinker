@@ -36,7 +36,7 @@
   "material.bluearchive_tinker.mika_ingot": "圣园未花",
 
   "modifier.bluearchive_tinker.mikastars": "星之呼唤",
-  "modifier.bluearchive_tinker.mikastars.description": "命造成的伤害必定暴击！！！ 自身护甲高于目标时造成额外2倍伤害 攻击三次后会召唤最终伤害*0.3的火球 ",
+  "modifier.bluearchive_tinker.mikastars.description": "造成的伤害必定暴击！！！ 自身护甲高于目标时造成额外2倍伤害 攻击三次后会召唤最终伤害*0.3的火球 ",
   "modifier.bluearchive_tinker.mikastars.flavor": "未花才不是魔女~是老师的公主殿下~",
 
   "modifier.bluearchive_tinker.cake": "茶话会",
@@ -110,5 +110,6 @@
   "material.bluearchive_tinker.seia": "圣娅",
 
   "material.bluearchive_tinker.seia_swimsuit": "圣娅●泳装",
+
   "material.bluearchive_tinker.hoshino_swimsuit": "星野●泳装"
 }
