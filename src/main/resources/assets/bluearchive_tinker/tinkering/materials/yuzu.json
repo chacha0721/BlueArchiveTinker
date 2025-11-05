@@ -1,5 +1,5 @@
 {
-  "color": "FEEAF3",
+  "color": "E65A3A",
   "fallbacks":["metal"],
   "generator": {
     "ignoreMaterialStats": false,
