@@ -4,22 +4,22 @@
   "stat_type": "bluearchive_tinker:mika_ingot"
 }, {
     "replace": true,
-    "parts": "assets/bluearchive_tinker/tinkering/materials/kaiser_bluie",
-    "stat_type": "bluearchive_tinker:kaiser_bluie"
+    "parts": "assets/bluearchive_tinker/tinkering/materials/kaiser_blue",
+    "stat_type": "bluearchive_tinker:kaiser_blue"
   }, {
   "replace": true,
   "parts": "assets/bluearchive_tinker/tinkering/materials/yuzu",
-  "stat_type": "bluearchive_tinker:yuuzu"
+  "stat_type": "bluearchive_tinker:yuzu"
 },{
   "replace": true,
-  "parts": "assets/bluearchive_tinker/tinkering/materials/yuzu",
+  "parts": "assets/bluearchive_tinker/tinkering/materials/hoshino_swimsuit",
   "stat_type": "bluearchive_tinker:hoshino_swimsuit"
 },{
   "replace": true,
-  "parts": "assets/bluearchive_tinker/tinkering/materials/yuzu",
+  "parts": "assets/bluearchive_tinker/tinkering/materials/seia",
   "stat_type": "bluearchive_tinker:seia"
 },{
   "replace": true,
-  "parts": "assets/bluearchive_tinker/tinkering/materials/yuzu",
+  "parts": "assets/bluearchive_tinker/tinkering/materials/seia_swimsuit",
   "stat_type": "bluearchive_tinker:seia_swimsuit"}
 ]
